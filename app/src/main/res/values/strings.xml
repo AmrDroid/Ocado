@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ocado</string>
+    <string name="info_no_matching_results">No Results</string>
+    <string name="info_no_results">No Matching Results</string>
+    <string name="info_no_favorite">No Favorite Found !</string>
+    <string name="info_no_result">No Matching Results !</string>
+    <string name="content_description_more_info_arrow">View Details</string>
+    <string name="hint_name">Product Name</string>
+    <string name="info_explore">Ocado</string>
+    <string name="info_loading_complete">Loaded Successfully :)</string>
+    <string name="error_check_internet_connection">Check Internet Connection</string>
+    <string name="error_oops_error_occured">Oops! No More Record</string>
+    <string name="error_loading_details">Couldn\'t load product details</string>
+    <string name="back_to_home_dashboard_content_desc">Back to home dashboard</string>
+    <string name="fetchProduct">Fetching Done :)</string>
+    <string name="price">Price</string>
+    <string name="product_image">Product Image</string>
+</resources>

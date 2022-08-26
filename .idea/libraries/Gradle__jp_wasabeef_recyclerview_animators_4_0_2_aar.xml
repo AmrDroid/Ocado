@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: jp.wasabeef:recyclerview-animators:4.0.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c78db6047f80b7a018f3da45bfa8c189/transformed/jetified-recyclerview-animators-4.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ac620a5c630b337b1aec0365b4d1ca0f/transformed/jetified-recyclerview-animators-4.0.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/4b0b82b69bb55e417d0e99129c62836a/transformed/jetified-recyclerview-animators-4.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4b0b82b69bb55e417d0e99129c62836a/transformed/jetified-recyclerview-animators-4.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4b0b82b69bb55e417d0e99129c62836a/transformed/jetified-recyclerview-animators-4.0.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jp.wasabeef/recyclerview-animators/4.0.2/c74773e05db1dff05c72924f66e07298f36c291b/recyclerview-animators-4.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/jp.wasabeef/recyclerview-animators/4.0.2/f1f789634da97e4d768c53cc28e55be291a0df83/recyclerview-animators-4.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

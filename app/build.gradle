@@ -1,0 +1,106 @@
+plugins {
+    id("com.android.application")
+    id("kotlin-android")
+    id("kotlin-kapt")
+    id('kotlin-android-extensions')
+}
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion '30.0.3'
+    defaultConfig {
+        applicationId "com.amrmustafa.ocado"
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            minifyEnabled false
+            testCoverageEnabled true
+        }
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/java'
+        test.java.srcDirs += 'src/test/java'
+        androidTest.java.srcDirs += 'src/androidTest/java'
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+        unitTests.all {
+            systemProperty 'robolectric.enabledSdks', '29'
+        }
+    }
+}
+
+dependencies {
+
+    //Jetpack
+    implementation appDependencies.appCompat
+    implementation appDependencies.androidxKtx
+    implementation appDependencies.constraintLayout
+    implementation appDependencies.supportV4
+    implementation appDependencies.fragmentKtx
+    implementation appDependencies.lifecycleExtensions
+
+    //retrofit
+    api dataDependencies.retrofit
+    api dataDependencies.moshiConverter
+    api dataDependencies.loggingInterceptor
+
+
+    //Material design
+    implementation appDependencies.material
+
+    //recycleview Animations
+    implementation appDependencies.recyclerviewAnimations
+
+    // Koin di
+    implementation appDependencies.koinAndroid
+    implementation appDependencies.koinAndroidViewModel
+
+    //glide
+    implementation appDependencies.glide
+    annotationProcessor appDependencies.annotationProcessor
+
+
+    //Test Libs
+    testImplementation testDependencies.junit
+    testImplementation testDependencies.robolectric
+    testImplementation testDependencies.androidxJunit
+    testImplementation testDependencies.runner
+    testImplementation testDependencies.rules
+    testImplementation testDependencies.googleTruth
+    testImplementation testDependencies.archComponentTest
+    testImplementation testDependencies.coroutinesTest
+    testImplementation testDependencies.koinTest
+    testImplementation testDependencies.mockWebServer
+    androidTestImplementation testDependencies.runner
+    androidTestImplementation testDependencies.rules
+    androidTestImplementation testDependencies.androidxJunit
+    androidTestImplementation testDependencies.androidxCoreTest
+
+
+}
+
