@@ -45,7 +45,7 @@ The 3 layered architectural approach is majorly guided by clean architecture whi
 
 I used the MVVM pattern for the presentation layer. The Model essentially exposes
 the various states the view can be in. The ViewModel handles the UI logic and provides
-data via Android architectural component LiveData to the view. The ViewModel talks to
+data via Android architectural component StateFlow to the view. The ViewModel talks to
 the domain layer with the individual use cases.
 
 #### Domain
